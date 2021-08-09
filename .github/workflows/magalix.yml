@@ -1,7 +1,18 @@
+ 
+# .github/workflows/magalix.yml
 name: Magalix
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   Magalix:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.TEST_GUARD }} event."
+    - uses: actions/checkout@v2
+    - name: Magalix
+      uses: magalixcorp/magalix-action@main
+      with:
+        webhook: ${{ secrets.TEST_GUARD }}
