@@ -4,8 +4,4 @@ jobs:
   magalix:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Magalix
-      uses: magalixcorp/magalix-action@main
-      with:
-        webhook: ${{ secrets.TEST_GUARD }}
+    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.TEST_GUARD }} event."
