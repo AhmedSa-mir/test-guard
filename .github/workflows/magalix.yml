@@ -1,7 +1,7 @@
 name: Magalix
 on: [push]
 jobs:
-  magalix:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.TEST_GUARD }} event."
+  Magalix:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.TEST_GUARD }} event."
