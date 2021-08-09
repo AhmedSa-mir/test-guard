@@ -4,7 +4,8 @@ name: Magalix
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   magalix:
