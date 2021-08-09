@@ -1,7 +1,5 @@
 name: Magalix
-
-on: push
-
+on: [push]
 jobs:
   magalix:
     runs-on: ubuntu-latest
