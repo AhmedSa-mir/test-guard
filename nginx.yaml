@@ -1,8 +1,9 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment2
+  labels:
+    owner: test
 spec:
   selector:
     matchLabels:
@@ -14,7 +15,8 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.7.9
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: nginx:1.7.9
+          ports:
+            - containerPort: 80
+
